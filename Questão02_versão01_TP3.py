@@ -8,7 +8,7 @@ print("Olá, esse é o simulador para eleitores \033[1;32mDemocratic\033[1;33mCh
 print("""
 \033[1;34mInstruções:\033[0;0m
 
-1° - Digite o seu ano de nascimento no formato 'aaaa'.
+1° - Digite a sua idade em inteiros, no formato "12", "14" (exemplos).
 2° - Datas de nascimento futuras não serão computadas.
 
 \033[1;34mVamos lá? Verique se você é eleitor obrigatório ou não:\033[0;0m """)
