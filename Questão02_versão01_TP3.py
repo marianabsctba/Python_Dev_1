@@ -12,7 +12,7 @@ print("""
 
 
 1° - Digite a sua idade em inteiros, no formato "NN", "14", "85" (exemplos).
-2° - Idades inferiores a zero não serão computadas.
+2° - Idades inferiores a zero não serão computadas e o programa pedirá uma idade válida.
 
 \033[1;34mVamos lá? Verique se você é eleitor obrigatório ou não:\033[0;0m """)
 
