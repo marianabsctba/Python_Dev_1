@@ -1,9 +1,19 @@
 #essa é a versão 01 da Questão 01.
 
-print("\033[1;92m=~\033[0;0m" * 30)
-print("""\033[1;94mBem-vindo ao SemCalote,
-o seu programa para calcular o serviço!\033[0;0m""")
-print("\033[1;92m=~\033[0;0m" * 30)
+#essa é a versão 01 da Questão 01.
+
+def lin_2():
+    print("\033[1;92m=~\033[0;0m" * 30)
+
+
+def lin():
+    print("\033[1;36m==\033[0;0m" * 30)
+
+lin_2()
+
+print("""\033[1;94mBem-vindo ao SemCalote, o seu programa para calcular o serviço!\033[0;0m""")
+
+lin_2()
 
 
 def minmax(valor, min, max):
@@ -53,20 +63,17 @@ def total_pessoa(qt_pessoa, consumo, gorjeta):
     return f"{(consumo + (consumo * (gorjeta / 100))) / qt_pessoa:.2f}".replace('.', ',')
 
 
+
 consumo = get_consumo()
 pessoas = get_quantidade_pessoas()
 gorjeta = get_gorjeta()
 
-print("\033[1;36m==\033[0;0m" * 30)
-print("O valor do consumo, com taxa de serviço, é R$ {valor_consumo}.".format(
-    valor_consumo=total_consumo(consumo, gorjeta)))
-print("\033[1;36m==\033[0;0m" * 30)
+lin()
+print("O valor do consumo, com taxa de serviço, é R$ {valor_consumo}.".format(valor_consumo=total_consumo(consumo, gorjeta)))
+lin()
 print("O valor por pessoa é R$ {valor_pessoa}.".format(valor_pessoa=total_pessoa(pessoas, consumo, gorjeta)))
+lin()
+lin_2()
 
-print("\033[1;36m==\033[0;0m" * 30)
-print("\033[1;92m=~\033[0;0m" * 30)
-
-print("""\033[1;94mFIM.
-Obrigado por usar o SemCalote!
-Volte sempre!\033[0;0m""")
-print("\033[1;92m=~\033[0;0m" * 30)
+print("""\033[1;94mFIM.Obrigado por usar o SemCalote! Volte sempre!\033[0;0m""")
+lin_2()
