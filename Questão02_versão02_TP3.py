@@ -1,16 +1,22 @@
 #essa é a versão 02 da Questão 02. Aqui, usei a biblioteca para pedir a data de nascimento.
 # diferentemente da versão 01, o programa deve ser reiniciado caso o valor seja inválido.
 
-print("\033[1;32m==\033[0;0m" * 30)
+def lin():
+    print("\033[1;32m==\033[0;0m" * 30)
+
+lin()
+
 print("Olá, esse é o simulador para eleitores \033[1;32mDemocratic\033[1;33mChoice.\033[0;0m")
+
 print("""
 \033[1;34mInstruções:\033[0;0m
 
-1° - Digite o seu ano de nascimento no formato 'aaaa'.
-2° - Datas de nascimento futuras não serão computadas.
+1° - Digite o seu ano de nascimento no formato 'aaaa'. Exemplo: "1989".
+2° - Datas de nascimento futuras não serão computadas e o programa será reiniciado.
 
 \033[1;34mVamos lá? Verique se você é eleitor obrigatório ou não:\033[0;0m """)
-print("\033[1;33m==\033[0;0m" * 30)
+
+lin()
 
 def voto(ano):
     from datetime import date
@@ -28,6 +34,9 @@ def voto(ano):
 
 nascimento = int(input("Em que ano você nasceu? "))
 print(voto(nascimento))
-print("\033[1;33m==\033[0;0m" * 30)
+
+lin()
+
 print("Obrigado por usar \033[1;32mDemocratic\033[1;33mChoice\033[0;0m. Volte sempre!")
-print("\033[1;33m==\033[0;0m" * 30)
+
+lin()
