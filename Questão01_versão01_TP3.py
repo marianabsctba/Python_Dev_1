@@ -1,11 +1,13 @@
 #essa é a versão 01 da Questão 01.
 
+def lin():
+    print("\033[1;36m==\033[0;0m" * 30)
+    
+    
+
 def lin_2():
     print("\033[1;92m=~\033[0;0m" * 30)
 
-
-def lin():
-    print("\033[1;36m==\033[0;0m" * 30)
 
 lin_2()
 
