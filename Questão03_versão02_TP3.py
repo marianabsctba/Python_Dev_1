@@ -6,7 +6,7 @@ def lin():
 
 lin()
 
-print("\033[1;34mBEM-VINDO(A) AO JURYMANFANTASY, O MELHOR PROGRAMA PARA JURADOS!\033[0;0m")
+print("\033[1;34mBEM-VINDO AO JURYMANFANTASY, O MELHOR PROGRAMA PARA JURADOS!\033[0;0m")
 
 lin()
 
@@ -23,16 +23,15 @@ def minmax(n, min=None, max=None):
 
     if n == min:
         print('A nota é  igual a 0.')
-        print("\033[1;34m==\033[1;92m==\033[0;0m" * 20)
+        lin()
 
     if n == max:
         print("A nota é igual a 10.")
-        print("\033[1;34m==\033[1;92m==\033[0;0m" * 20)
+        lin()
 
     if n > min and n < max:
         print('A nota é maior do que 0 e menor do que 10.')
-        print("\033[1;34m==\033[1;92m==\033[0;0m" * 20)
-
+        lin()
 
 
 def get_aluno():
@@ -40,8 +39,6 @@ def get_aluno():
     nota = float(input("Digite a nota do participante: "))
     minmax(nota, 0, 10)
     return (nome, nota)
-
-
 
 list_aluno = []
 maior_nota = 0
@@ -61,5 +58,3 @@ lin()
 print("\033[1;34mObrigado pela preferência! Volte sempre!\033[0;0m")
 
 lin()
-
-
